@@ -51,4 +51,4 @@ For the second part of this section, if you could reimplement and redesign every
 - Separate data from the main code
 - Slice the code in order to understand it
 - Use the browser to analyze the cycle of the code
-- Simplify parts of the code to be more readable for me
+- Simplify parts of the code with external functions to be more readable
