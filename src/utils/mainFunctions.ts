@@ -1,6 +1,6 @@
 import { ItemInterface } from "../interface/ItemInterface";
 import { ItemOutputResultInterface } from "../interface/ItemOutputResultInterface";
-import { getRoundedNumberWithTwoDecimals, getSerializedData } from "./utils";
+import { getArrayWithEachItemPrice, getRoundedNumberWithTwoDecimals, getSerializedData } from "./utils";
 
 export function getPriceOfItems(input: string, items: ItemInterface[]) {
   const arrayWithEachItemPrice = getArrayWithEachItemPrice(input, items);
@@ -12,26 +12,7 @@ export function getPriceOfItems(input: string, items: ItemInterface[]) {
   return getRoundedNumberWithTwoDecimals(sum);
 }
 
-function getArrayWithEachItemPrice(input: string, items: ItemInterface[]) {
-  const serializedInputs = getSerializedData(input);
-  let arrayWithEachItemPrice = [];
 
-  for (let serializedInput of serializedInputs) {
-    let [id, quantity] = serializedInput;
-
-    const item: ItemInterface = items[Number(Number(id)) - 1];
-
-    let itemPrice = Number(item.unitPrice);
-    let inputQuantity = Number(quantity);
-
-    if (inputQuantity < 1) inputQuantity *= 1000;
-
-    const itemTotalPrice = inputQuantity * itemPrice;
-
-    arrayWithEachItemPrice.push(itemTotalPrice);
-  }
-  return arrayWithEachItemPrice;
-}
 
 export function getPriceQuery(input: string, items: ItemInterface[]) {
   const serializedInput = getSerializedData(input);

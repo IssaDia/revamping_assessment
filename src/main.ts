@@ -4,12 +4,12 @@ import { testDatas } from "./data/testData";
 
 import { getPriceOfItems, getPriceQuery } from "./utils/mainFunctions";
 
-
 function summaryApi(input: { action: string; datas: string }) {
-  if (input.action === "calculate") return getPriceOfItems(input.datas, items as ItemInterface[]);
-  if (input.action === "query") return getPriceQuery(input.datas, items as ItemInterface[]);
+  if (input.action === "calculate")
+    return getPriceOfItems(input.datas, items as ItemInterface[]);
+  if (input.action === "query")
+    return getPriceQuery(input.datas, items as ItemInterface[]);
   return;
-
 }
 
 function testFunction() {

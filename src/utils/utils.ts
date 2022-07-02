@@ -1,3 +1,5 @@
+import { ItemInterface } from "../interface/ItemInterface";
+
 export function getNumberWithChoosenNumberOfDecimals(
   number: number,
   decimalAfterDot: number
@@ -45,4 +47,28 @@ export function getSerializedData(input: string) {
 
     return serializedBasicArray;
   }
+}
+
+export function getArrayWithEachItemPrice(
+  input: string,
+  items: ItemInterface[]
+) {
+  const serializedInputs = getSerializedData(input);
+  let arrayWithEachItemPrice = [];
+
+  for (let serializedInput of serializedInputs) {
+    let [id, quantity] = serializedInput;
+
+    const item: ItemInterface = items[Number(Number(id)) - 1];
+
+    let itemPrice = Number(item.unitPrice);
+    let inputQuantity = Number(quantity);
+
+    if (inputQuantity < 1) inputQuantity *= 1000;
+
+    const itemTotalPrice = inputQuantity * itemPrice;
+
+    arrayWithEachItemPrice.push(itemTotalPrice);
+  }
+  return arrayWithEachItemPrice;
 }
