@@ -38,7 +38,6 @@ export function getSerializedData(input: string) {
     return serializedMultidimensionalArray;
   } else {
     for (let singleData of input) {
-      console.log(singleData);
       if (!singleData.includes(",")) {
         serializedBasicArray.push(singleData);
       }

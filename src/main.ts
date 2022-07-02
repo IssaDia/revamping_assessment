@@ -1,14 +1,3 @@
-/**
- * @typedef {object} Item
- * @property {number} id
- * @property {string} name
- * @property {number} unitPrice
- * @property {string} unit
- *
- * Generates sample database
- * @returns {{ items: { [itemId: number]: Item }}}
- */
-
 import { items } from "./data/item";
 import { ItemInterface } from "./interface/ItemInterface";
 import { testDatas } from "./data/testData";
