@@ -1,4 +1,5 @@
 import { ItemInterface } from "../interface/ItemInterface";
+import { ItemOutputResultInterface } from "../interface/ItemOutputResultInterface";
 
 export function getNumberWithChoosenNumberOfDecimals(
   number: number,
@@ -72,3 +73,9 @@ export function getArrayWithEachItemPrice(
   }
   return arrayWithEachItemPrice;
 }
+
+export function getSum(input : number[]): number {
+  return input?.reduce((prev, curr) => prev + curr);
+}
+
+
