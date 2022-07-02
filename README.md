@@ -52,3 +52,22 @@ For the second part of this section, if you could reimplement and redesign every
 - Slice the code in order to understand it
 - Use the browser to analyze the cycle of the code
 - Simplify parts of the code with external functions to be more readable
+
+# Feedback
+
+Former code was going in all places so it was kinda hard to decipher even with the browser console. The major problem was that the quantity wasn't 
+handled well to calculate the prices.
+
+My way to improve it : 
+
+- extract data to specific folders
+- better use of Typescript to be more readable and understood by others
+- extract a maximum of functions to separate files, still in that perspective to have a code more readable
+- use of some of ES6 features like : 
+  - let and const
+  - include
+  - for/of
+  - import modules
+  - endsWith
+  - array functions
+
