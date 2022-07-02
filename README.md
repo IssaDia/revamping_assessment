@@ -46,13 +46,6 @@ This section would test you on:
  
 For the second part of this section, if you could reimplement and redesign everything from scratch, how would you implement it?
 
-# Methodology
-
-- Separate data from the main code
-- Slice the code in order to understand it
-- Use the browser to analyze the cycle of the code
-- Simplify parts of the code with external functions to be more readable
-
 # Feedback
 
 Former code was going in all places so it was kinda hard to decipher even with the browser console. The major problem was that the quantity wasn't 
