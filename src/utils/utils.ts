@@ -23,22 +23,27 @@ export function getRoundedNumberWithTwoDecimals(input: number): Number {
 }
 
 export function getSerializedData(input: string) {
-  let serializedInput: string[] = [];
+  let serializedMultidimensionalArray: string[][] = [];
+  let serializedBasicArray: string[] = [];
+
   if (input.includes(";")) {
     let inputDataStringArrays: string[] = input.split(";");
 
     inputDataStringArrays.map((data) => {
-      let splitedString = data.split(",");
+      let splitedString: string[] = data.split(",");
 
-      serializedInput.push(splitedString);
+      serializedMultidimensionalArray.push(splitedString);
     });
-    return serializedInput;
+
+    return serializedMultidimensionalArray;
   } else {
     for (let singleData of input) {
+      console.log(singleData);
       if (!singleData.includes(",")) {
-        serializedInput.push(singleData);
+        serializedBasicArray.push(singleData);
       }
     }
-    return serializedInput;
+
+    return serializedBasicArray;
   }
 }
