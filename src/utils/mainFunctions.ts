@@ -22,10 +22,11 @@ function getArrayWithEachItemPrice(input: string, items: ItemInterface[]) {
     const item: ItemInterface = items[Number(Number(id)) - 1];
 
     let itemPrice = Number(item.unitPrice);
+    let inputQuantity = Number(quantity);
 
-    if (Number(quantity) < 1) quantity *= 1000;
+    if (inputQuantity < 1) inputQuantity *= 1000;
 
-    const itemTotalPrice = Number(quantity) * itemPrice;
+    const itemTotalPrice = inputQuantity * itemPrice;
 
     arrayWithEachItemPrice.push(itemTotalPrice);
   }
