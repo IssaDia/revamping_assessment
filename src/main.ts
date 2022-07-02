@@ -4,7 +4,7 @@ import { testDatas } from "./data/testData";
 
 import { getPriceOfItems, getPriceQuery } from "./utils/mainFunctions";
 
-function summaryApi(input: { action: string; datas: string }) {
+const summaryApi = (input: { action: string; datas: string }) => {
   if (input.action === "calculate")
     return getPriceOfItems(input.datas, items as ItemInterface[]);
   if (input.action === "query")
@@ -12,7 +12,7 @@ function summaryApi(input: { action: string; datas: string }) {
   return;
 }
 
-function testFunction() {
+const testFunction = () => {
   testDatas.forEach(({ testNo, input, expectedOutput }) => {
     const receivedOutput = summaryApi(input);
 

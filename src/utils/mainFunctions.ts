@@ -1,18 +1,21 @@
 import { ItemInterface } from "../interface/ItemInterface";
 import { ItemOutputResultInterface } from "../interface/ItemOutputResultInterface";
-import { getArrayWithEachItemPrice, getRoundedNumberWithTwoDecimals, getSerializedData, getSum } from "./utils";
+import {
+  getArrayWithEachItemPrice,
+  getRoundedNumberWithTwoDecimals,
+  getSerializedData,
+  getSum,
+} from "./utils";
 
-export function getPriceOfItems(input: string, items: ItemInterface[]) {
+export const getPriceOfItems = (input: string, items: ItemInterface[]) => {
   const arrayWithEachItemPrice = getArrayWithEachItemPrice(input, items);
 
   const sum: number = getSum(arrayWithEachItemPrice);
 
   return getRoundedNumberWithTwoDecimals(sum);
+};
 
-  
-}
-
-export function getPriceQuery(input: string, items: ItemInterface[]) {
+export const getPriceQuery = (input: string, items: ItemInterface[]) => {
   const serializedInput = getSerializedData(input);
 
   let results: ItemOutputResultInterface[] = [];
@@ -26,4 +29,4 @@ export function getPriceQuery(input: string, items: ItemInterface[]) {
   }
 
   return results;
-}
+};
