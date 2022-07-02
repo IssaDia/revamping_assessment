@@ -1,10 +1,10 @@
 import { ItemInterface } from "../interface/ItemInterface";
 
 export const getNumberWithChoosenNumberOfDecimals = (
-  number: number,
+  input: number,
   decimalAfterDot: number
 ) => {
-  return number.toFixed(decimalAfterDot);
+  return Number(input.toFixed(decimalAfterDot));
 };
 
 export const getRoundedNumberWithTwoDecimals = (input: number): Number => {

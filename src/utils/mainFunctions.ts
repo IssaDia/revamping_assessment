@@ -2,6 +2,7 @@ import { ItemInterface } from "../interface/ItemInterface";
 import { ItemOutputResultInterface } from "../interface/ItemOutputResultInterface";
 import {
   getArrayWithEachItemPrice,
+  getNumberWithChoosenNumberOfDecimals,
   getRoundedNumberWithTwoDecimals,
   getSerializedData,
   getSum,
@@ -25,7 +26,10 @@ export const getPriceQuery = (input: string, items: ItemInterface[]) => {
 
     if (item.unit === "g") item.unitPrice *= 1000;
 
-    results.push({ itemId: item.id, kgPrice: item.unitPrice });
+    results.push({
+      itemId: item.id,
+      kgPrice: getNumberWithChoosenNumberOfDecimals(item.unitPrice,2),
+    });
   }
 
   return results;
