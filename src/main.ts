@@ -10,18 +10,16 @@
  */
 
 import { items } from "./data/item";
-import { ItemInterface } from "./data/ItemInterface";
 import { testDatas } from "./data/testData";
 
-import { getPriceOfItems } from "./utils/functions";
-
-
-const database = { items: { ...items } };
+import { getPriceOfItems, getPriceQuery } from "./utils/functions";
 
 
 function summaryApi(input: { action: string; datas: string }) {
-  if (input.action === "calculate")
-    return getPriceOfItems(input.datas, database);
+  if (input.action === "calculate") return getPriceOfItems(input.datas, items);
+  if (input.action === "query") return getPriceQuery(input.datas, items);
+  return;
+
 }
 
 function testFunction() {
