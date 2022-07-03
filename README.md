@@ -64,4 +64,4 @@ My way to improve it :
   - import modules
   - endsWith
   - array functions
-- use explit name for variables and function in order to avoid comments
+- use explicit name for variables and functions in order to avoid comments
