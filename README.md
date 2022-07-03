@@ -53,10 +53,14 @@ Former code was going in all places so it was kinda hard to decipher even with t
 handled well to calculate the prices.
 
 error on the query part of formal code : 
+
+
 ![image](https://user-images.githubusercontent.com/44264590/177031023-1b2ade3c-85d9-405d-a799-38a2e08bc9c3.png)
 they attribute unitPrice to the outputItem instead of kgPrice
 
 fixing the bug : 
+
+
 ![image](https://user-images.githubusercontent.com/44264590/177031111-5439bb33-2712-46b8-998a-b634a260a211.png)
 
 
