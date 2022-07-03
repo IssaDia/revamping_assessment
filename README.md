@@ -51,9 +51,9 @@ For the second part of this section, if you could reimplement and redesign every
 
 Former code was going in all places so it was kinda hard to decipher even with the browser console.
 
-###Errors on former code
+### Errors on former code
 
-- quantity part : 
+- *quantity part* : 
 
 ![image](https://user-images.githubusercontent.com/44264590/177031478-67dfbbbb-8f5c-4959-8834-a319ce14655c.png)
 
@@ -66,7 +66,7 @@ fixing the bug :
 ![image](https://user-images.githubusercontent.com/44264590/177031531-82a5824a-288c-457c-8bb1-a3f977b6d8e4.png)
 
 
-- query part : 
+- *query part* : 
 
 
 ![image](https://user-images.githubusercontent.com/44264590/177031023-1b2ade3c-85d9-405d-a799-38a2e08bc9c3.png)
