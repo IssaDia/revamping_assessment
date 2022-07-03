@@ -51,7 +51,7 @@ For the second part of this section, if you could reimplement and redesign every
 
 Former code was going in all places so it was kinda hard to decipher even with the browser console.
 
-Errors on former code
+## Errors on former code
 
 - quantity part : 
 
