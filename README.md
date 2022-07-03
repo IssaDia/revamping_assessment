@@ -49,8 +49,20 @@ For the second part of this section, if you could reimplement and redesign every
 
 # Feedback
 
-Former code was going in all places so it was kinda hard to decipher even with the browser console. The major problem was that the quantity wasn't
-handled well to calculate the prices.
+Former code was going in all places so it was kinda hard to decipher even with the browser console.
+
+error on the quantity part : 
+
+![image](https://user-images.githubusercontent.com/44264590/177031478-67dfbbbb-8f5c-4959-8834-a319ce14655c.png)
+
+
+they multiplied by 1000 instead of dividing it by 100 to find the the right quantity to use with grams
+
+fixing the bug : 
+
+
+![image](https://user-images.githubusercontent.com/44264590/177031531-82a5824a-288c-457c-8bb1-a3f977b6d8e4.png)
+
 
 error on the query part of formER code : 
 
