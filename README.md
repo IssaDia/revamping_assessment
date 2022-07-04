@@ -81,7 +81,7 @@ fixing the bug :
 ![image](https://user-images.githubusercontent.com/44264590/177031111-5439bb33-2712-46b8-998a-b634a260a211.png)
 
 
-My way to improve it that you can find on this project above :
+My way to improve it that you can find on the project above :
 
 - extract data to specific folders
 - better use of Typescript to be more readable and understood by others
