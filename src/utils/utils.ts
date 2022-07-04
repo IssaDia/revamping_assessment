@@ -11,10 +11,10 @@ export const getRoundedNumberWithTwoDecimals = (input: number): Number => {
   const inputWithTwoDecimals = getNumberWithChoosenNumberOfDecimals(input, 2);
   const inputStringified = inputWithTwoDecimals.toString();
 
-  const LastDecimal = /[0-9]{1}$/;
+  const lastDecimal = /[0-9]{1}$/;
 
   if (!inputStringified.endsWith("5")) {
-    input = Number(inputStringified.replace(LastDecimal, "5"));
+    input = Number(inputStringified.replace(lastDecimal, "5"));
 
     return getNumberWithChoosenNumberOfDecimals(input, 2);
   }
