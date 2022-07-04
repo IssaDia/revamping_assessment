@@ -1,6 +1,7 @@
 # Context
 
 Revamping
+
 You received a task to refactor and fix an existing code. The code includes a test function to identify and fix the existing bug.
 
 Business rules
@@ -49,10 +50,38 @@ For the second part of this section, if you could reimplement and redesign every
 
 # Feedback
 
-Former code was going in all places so it was kinda hard to decipher even with the browser console. The major problem was that the quantity wasn't
-handled well to calculate the prices.
+Former code was going in all places so it was kinda hard to decipher even with the browser console.
 
-My way to improve it :
+### Errors on former code
+
+- *quantity part* : 
+
+![image](https://user-images.githubusercontent.com/44264590/177031478-67dfbbbb-8f5c-4959-8834-a319ce14655c.png)
+
+
+they multiplied by 1000 instead of dividing it by 1000 to find the right quantity to use
+
+fixing the bug : 
+
+
+![image](https://user-images.githubusercontent.com/44264590/177031531-82a5824a-288c-457c-8bb1-a3f977b6d8e4.png)
+
+
+- *query part* : 
+
+
+![image](https://user-images.githubusercontent.com/44264590/177031023-1b2ade3c-85d9-405d-a799-38a2e08bc9c3.png)
+
+
+they gave unitPrice to the outputItem instead of kgPrice
+
+fixing the bug : 
+
+
+![image](https://user-images.githubusercontent.com/44264590/177031111-5439bb33-2712-46b8-998a-b634a260a211.png)
+
+
+My way to improve it that you can find on this project above :
 
 - extract data to specific folders
 - better use of Typescript to be more readable and understood by others
@@ -64,4 +93,4 @@ My way to improve it :
   - import modules
   - endsWith
   - array functions
-- use explit name for variables and function in order to avoid comments
+- use explicit name for variables and functions in order to avoid comments
