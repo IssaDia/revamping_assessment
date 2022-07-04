@@ -93,4 +93,5 @@ My way to improve it that you can find on this project above :
   - import modules
   - endsWith
   - array functions
+  - destructuration
 - use explicit name for variables and functions in order to avoid comments
