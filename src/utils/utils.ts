@@ -16,10 +16,10 @@ export const getRoundedNumberWithTwoDecimals = (input: number): Number => {
   if (!inputStringified.endsWith("5")) {
     input = Number(inputStringified.replace(LastDecimal, "5"));
 
-    return Number(getNumberWithChoosenNumberOfDecimals(input, 2));
+    return getNumberWithChoosenNumberOfDecimals(input, 2);
   }
 
-  return Number(getNumberWithChoosenNumberOfDecimals(input, 2));
+  return getNumberWithChoosenNumberOfDecimals(input, 2);
 };
 
 export const getSerializedData = (input: string) => {
