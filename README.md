@@ -1,6 +1,7 @@
 # Context
 
 Revamping
+
 You received a task to refactor and fix an existing code. The code includes a test function to identify and fix the existing bug.
 
 Business rules
@@ -58,7 +59,7 @@ Former code was going in all places so it was kinda hard to decipher even with t
 ![image](https://user-images.githubusercontent.com/44264590/177031478-67dfbbbb-8f5c-4959-8834-a319ce14655c.png)
 
 
-they multiplied by 1000 instead of dividing it by 100 to find the the right quantity to use with grams
+they multiplied by 1000 instead of dividing it by 1000 to find the right quantity to use
 
 fixing the bug : 
 
